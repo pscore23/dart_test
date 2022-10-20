@@ -1,23 +1,13 @@
-void main() {
-  int i = 0;
-  double j = 1.0;
-  String text = "World";
-  bool flag = false;
+import "dart:convert";
+import "dart:io";
 
-  dynamic any = "!";
+void main(List<String> args) async {
+  var request =
+      await HttpClient().getUrl(Uri.parse("https://scratch.mit.edu/"));
+  var response = await request.close();
+  var responseBodyText = await utf8.decodeStream(response);
 
-  final nc = "Hello";
-  const cp = ", ";
+  print(responseBodyText);
 
-  if (!flag) {
-    print(i);
-    print(j);
-
-    print("${nc}${cp}${text}${any}"); // -> Hello, World!
-  }
+  exit(0);
 }
-
-/*
-Dart すごい
-よって Flutter もすごい
-*/
