@@ -9,7 +9,7 @@ void main() {
   final nc = "Hello";
   const cp = ", ";
 
-  print("${nc}${cp}${text}${any}"); // こういうコメント書いてみたかった
+  print("${nc}${cp}${text}${any}"); // -> Hello, World!
 }
 
 /*
