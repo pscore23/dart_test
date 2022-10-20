@@ -9,7 +9,12 @@ void main() {
   final nc = "Hello";
   const cp = ", ";
 
-  print("${nc}${cp}${text}${any}"); // -> Hello, World!
+  if (!flag) {
+    print(i);
+    print(j);
+
+    print("${nc}${cp}${text}${any}"); // -> Hello, World!
+  }
 }
 
 /*
