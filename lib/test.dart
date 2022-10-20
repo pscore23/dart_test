@@ -1,6 +1,6 @@
 void main() {
   int i = 0;
-  double j = 1.00;
+  double j = 1.0;
   String text = "World";
   bool flag = false;
 
